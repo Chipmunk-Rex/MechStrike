@@ -1655,7 +1655,7 @@ MonoBehaviour:
       planeBone3: {fileID: 0}
       planeRotationOffset: {x: 0, y: 0, z: 0, w: 1}
     - bone: {fileID: 211550076}
-      target: {fileID: 0}
+      target: {fileID: 1283687983}
       positionWeight: 0
       rotationWeight: 0
       position: {x: 0, y: 0, z: 0}
@@ -1868,7 +1868,7 @@ MonoBehaviour:
     IKPosition: {x: -0.008123594, y: 3.1552296, z: -2.9973276}
     IKPositionWeight: 1
     root: {fileID: 520743281}
-    target: {fileID: 1855112205}
+    target: {fileID: 1643321966}
     tolerance: 0
     maxIterations: 4
     useRotationLimits: 1
@@ -3077,6 +3077,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1744001967788435925, guid: 98d79ee912a3dd24db7c2e92e13a4108, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2887127803278517073, guid: 98d79ee912a3dd24db7c2e92e13a4108, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3313,6 +3317,37 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1283687982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1283687983}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1283687983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283687982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8884735, y: -1.9126381, z: -2.9500418}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1323403903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6214193896551985072, guid: 98d79ee912a3dd24db7c2e92e13a4108, type: 3}
@@ -3607,7 +3642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   axis: {x: 1, y: 0, z: 0}
   defaultLocalRotation: {x: 0.5161225, y: -0.48570076, z: 0.5058629, w: -0.49174708}
-  useLimits: 1
+  useLimits: 0
   min: -90
   max: 90
   zeroAxisDisplayOffset: 0
@@ -4734,3 +4769,4 @@ SceneRoots:
   - {fileID: 258488904}
   - {fileID: 764721849}
   - {fileID: 1231557316}
+  - {fileID: 1283687983}
