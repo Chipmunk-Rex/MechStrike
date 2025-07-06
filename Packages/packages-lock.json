@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.devlab.chipmunklibrary.utility": {
+      "version": "https://github.com/Chipmunk-Rex/Chipmunk-Library.git?path=/Utility",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "9ef08e36f5dbc723d769b0e3300c818ecea3ba02"
+    },
     "com.unity.ai.navigation": {
       "version": "2.0.7",
       "depth": 0,

@@ -10145,9 +10145,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 417e358c130ae6c488f2ffe5d6c9830e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 746550542}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 417e358c130ae6c488f2ffe5d6c9830e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 746550541}
     - targetCorrespondingSourceObject: {fileID: 2261973912390581236, guid: 417e358c130ae6c488f2ffe5d6c9830e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 979452506}
@@ -10252,25 +10249,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 417e358c130ae6c488f2ffe5d6c9830e, type: 3}
   m_PrefabInstance: {fileID: 746550520}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &746550541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 746550540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da28f9c80db074b10842df00a4b50b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothFollow: 1
-  smoothFollowSpeed: 25
-  characterController: {fileID: 2085331860}
-  turnSensitivity: 0.2
-  turnSpeed: 5
-  runCycleLegOffset: 0.2
-  animSpeedMultiplier: 1
 --- !u!114 &746550542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29951,7 +29929,6 @@ GameObject:
   - component: {fileID: 2085331859}
   - component: {fileID: 2085331862}
   - component: {fileID: 2085331861}
-  - component: {fileID: 2085331860}
   - component: {fileID: 2085331863}
   m_Layer: 0
   m_Name: Mech
@@ -29978,57 +29955,6 @@ Transform:
   - {fileID: 282839087}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2085331860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2085331858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8f8cb876d2c742a9a5d9bfa03990ada, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gravityTarget: {fileID: 0}
-  gravityMultiplier: 1
-  airborneThreshold: 0.5
-  slopeStartAngle: 50
-  slopeEndAngle: 85
-  spherecastRadius: 0.1
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 17
-  characterAnimation: {fileID: 746550541}
-  userControl: {fileID: 2085331863}
-  cam: {fileID: 1643321969}
-  moveMode: 0
-  smoothPhysics: 1
-  smoothAccelerationTime: 0.2
-  linearAccelerationSpeed: 2
-  platformFriction: 7
-  groundStickyEffect: 7
-  maxVerticalVelocityOnGround: 3
-  velocityToGroundTangentWeight: 0
-  lookInCameraDirection: 0
-  turnSpeed: 10
-  stationaryTurnSpeedMlp: 1
-  airSpeed: 6
-  airControl: 3
-  jumpPower: 5
-  jumpRepeatDelayTime: 0
-  doubleJumpEnabled: 0
-  doubleJumpPowerMlp: 1
-  wallRunLayers:
-    serializedVersion: 2
-    m_Bits: 16
-  wallRunMaxLength: 1
-  wallRunMinMoveMag: 0.6
-  wallRunMinVelocityY: -1.5
-  wallRunRotationSpeed: 2
-  wallRunMaxRotationAngle: 70
-  wallRunWeightSpeed: 10
-  crouchCapsuleScaleMlp: 0.6
 --- !u!136 &2085331861
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -30088,12 +30014,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2085331858}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc555ffe423d44c2f983615b1af3cef4, type: 3}
+  m_Script: {fileID: 11500000, guid: dc2b6ce290e34f78b2080dd18441a4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkByDefault: 0
-  canCrouch: 1
-  canJump: 1
+  mechUpperBody: {fileID: 0}
+  rotationOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &2096513379
 GameObject:
   m_ObjectHideFlags: 0

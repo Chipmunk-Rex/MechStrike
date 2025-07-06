@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.devlab.chipmunklibrary.utility": "https://github.com/Chipmunk-Rex/Chipmunk-Library.git?path=/Utility",
     "com.unity.ai.navigation": "2.0.7",
     "com.unity.animation.rigging": "1.3.0",
     "com.unity.cinemachine": "2.10.3",
